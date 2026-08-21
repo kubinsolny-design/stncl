@@ -4,3 +4,15 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 .career-page-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(300px,.65fr);gap:80px;align-items:start}.career-page-grid>div>p{color:var(--muted);font-size:17px}.career-page-grid h2{font:700 30px var(--font-display);text-transform:uppercase;margin:48px 0 10px}.career-tags.dark span{border-color:var(--line);color:var(--navy)}.job-list{list-style:none;padding:0;margin:0}.job-list li{border-top:1px solid var(--line);padding:14px 0 14px 28px;position:relative}.job-list li:before{content:"";position:absolute;left:0;top:24px;width:8px;height:8px;background:var(--red)}.career-contact.sticky{position:sticky;top:110px;box-shadow:0 20px 55px rgba(7,26,47,.12)}.career-contact.sticky p{font-size:13px;color:var(--muted)}.page-quote{padding-top:100px}.quote-direct a+a{font:600 14px var(--font-body);margin-top:8px;color:#afbdcb}
 @media(max-width:900px){.career-page-grid{grid-template-columns:1fr;gap:45px}.career-contact.sticky{position:static}}
+
+/* Visual rhythm and Czech diacritics */
+.hero h1,.subhero h1,.service-hero h1{line-height:1.02}
+.people>div{grid-template-columns:minmax(180px,.82fr) minmax(0,1.18fr);column-gap:28px;align-items:start}
+.people strong{align-self:start;padding:6px 0;line-height:1.4}
+.people a{min-width:0;line-height:1.4;overflow-wrap:anywhere}
+.page-quote{padding-top:44px}
+.subhero:has(+.page-quote){padding-bottom:56px}
+
+@media(max-width:900px){.subhero:has(+.page-quote){padding-bottom:40px}.page-quote{padding-top:36px}}
+@media(max-width:560px){.hero h1,.subhero h1,.service-hero h1{line-height:1.04}.people>div{grid-template-columns:1fr;row-gap:2px}.people strong{padding-bottom:8px}.page-quote{padding-top:28px}}
+
