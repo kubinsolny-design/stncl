@@ -16,3 +16,32 @@
 @media(max-width:900px){.subhero:has(+.page-quote){padding-bottom:40px}.page-quote{padding-top:36px}}
 @media(max-width:560px){.hero h1,.subhero h1,.service-hero h1{line-height:1.04}.people>div{grid-template-columns:1fr;row-gap:2px}.people strong{padding-bottom:8px}.page-quote{padding-top:28px}}
 
+/* Yellow brand accents */
+:root{--yellow:#ffc928;--yellow-deep:#f0b800}
+.button{background:var(--yellow);color:var(--navy)}
+.button:hover{background:var(--yellow-deep);color:var(--navy)}
+.button-ghost{background:rgba(255,255,255,.08);color:#fff}
+.button-ghost:hover{background:#fff;color:var(--navy)}
+.button:focus-visible{outline-color:#fff;box-shadow:0 0 0 5px var(--navy)}
+.eyebrow.light{color:var(--yellow)}
+.pulse{background:var(--yellow);box-shadow:0 0 0 7px rgba(255,201,40,.18)}
+.service-number{background:var(--yellow);color:var(--navy)}
+.quick-contact,.career,.service-cta{background:linear-gradient(110deg,var(--red) 0%,var(--red) 64%,var(--yellow) 115%)}
+.quick-grid>a,.service-cta .container>div:last-child>a:not(.button){color:var(--navy)}
+.service-cta .button{background:var(--yellow);color:var(--navy)}
+.stats{border-bottom:4px solid var(--yellow)}
+
+/* References */
+.reference-subhero{position:relative;overflow:hidden}
+.reference-subhero:after{content:"";position:absolute;right:-8%;bottom:-170px;width:520px;height:300px;background:var(--yellow);transform:rotate(-14deg);opacity:.96}
+.reference-subhero>.container{position:relative;z-index:1}
+.references-section{background:var(--paper)}
+.partner-wall{background:#fff;border:1px solid var(--line);padding:24px;box-shadow:0 24px 60px rgba(7,26,47,.08)}
+.partner-wall img{display:block;width:100%;height:auto;object-fit:contain}
+.partner-tags{list-style:none;padding:0;margin:28px 0 0;display:flex;flex-wrap:wrap;gap:10px}
+.partner-tags li{background:#fff;border-left:3px solid var(--yellow);padding:9px 13px;font-size:12px;font-weight:800;color:var(--navy)}
+.reference-cta h2{max-width:700px}
+
+@media(max-width:900px){.quick-contact,.career,.service-cta{background:linear-gradient(145deg,var(--red) 0%,var(--red) 76%,var(--yellow) 130%)}.quick-grid>a,.service-cta .container>div:last-child>a:not(.button){color:#fff}.reference-subhero:after{right:-45%;bottom:-185px}.partner-wall{padding:14px}}
+@media(max-width:560px){.reference-subhero h1{font-size:54px}.partner-wall{padding:8px}.partner-tags{gap:7px}.partner-tags li{font-size:11px;padding:7px 10px}}
+
