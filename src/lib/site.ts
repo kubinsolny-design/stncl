@@ -3,6 +3,7 @@ export const siteUrl = "https://www.stenceltransport.cz";
 export const nav = [
   { href: "/#sluzby", label: "Služby" },
   { href: "/o-nas", label: "O nás" },
+  { href: "/reference", label: "Reference" },
   { href: "/kariera", label: "Kariéra" },
   { href: "/kontakty", label: "Kontakty" },
 ];
@@ -36,3 +37,4 @@ export const branches: Branch[] = [
 ];
 
 export const telHref = (value: string) => `tel:${value.replace(/\s/g, "")}`;
+
